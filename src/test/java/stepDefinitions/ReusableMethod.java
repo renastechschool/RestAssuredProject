@@ -9,7 +9,8 @@ import static io.restassured.RestAssured.given;
 public class ReusableMethod {
 
 
-    String BASE_URL = "http://api.endamti.com/";
+    String BASE_URL = "http://qa-api.endamti.com/";
+
 
     public void getAClient(Integer id){
 
@@ -18,7 +19,7 @@ public class ReusableMethod {
 
                 given()
                 .queryParam("id",590)
-                .get(BASE_URL + "clients/get");
+                .get(BASE_URL + "clients/get/");
 
         System.out.println("Status Code for Get Client: "+response.statusCode());
 
