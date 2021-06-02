@@ -32,4 +32,15 @@ public class steps {
 
     }
 
+    @Given("The user wants to get a person")
+    public void the_user_wants_to_get_a_person() {
+         reusableMethodsSW.getSpecificPerson();
+    }
+
+
+    @Given("The user wants to get all Species")
+    public void the_user_wants_to_get_all_species() {
+         reusableMethodsSW.getAllSpecies();
+    }
+
 }
