@@ -5,6 +5,7 @@ import io.cucumber.java.en.Given;
 public class steps {
 
     ReusableMethod reusableMethod = new ReusableMethod();
+    ReusableMethodsSW reusableMethodsSW = new ReusableMethodsSW();
 
     @Given("The user wants to get client by id as {int}")
     public void the_user_wants_to_get_client_by_id_as(Integer id) {
@@ -22,6 +23,13 @@ public class steps {
     @Given("the user wants to activate")
     public void the_user_wants_to_activate() {
         reusableMethod.activateTheUser();
+    }
+
+    @Given("The user wants to get all people")
+    public void the_user_wants_to_get_all_people() {
+
+        reusableMethodsSW.getAllPeople();
+
     }
 
 }
