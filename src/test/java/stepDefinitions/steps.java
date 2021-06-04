@@ -55,4 +55,14 @@ public class steps {
          booking.getToken();
     }
 
+    @Given("The user wants to get booking")
+    public void the_user_wants_to_get_booking() {
+        booking.getBookingWithID();
+    }
+
+    @Given("The user wants to create a new booking")
+    public void the_user_wants_to_create_a_new_booking() {
+        booking.createNewBooking();
+    }
+
 }
