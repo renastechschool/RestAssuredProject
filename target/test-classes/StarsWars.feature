@@ -13,3 +13,7 @@ Feature: Creating all scenario for StarWars
         Given The user wants to get all Species
 
 
+
+        Scenario: Verify that all species are matching as expected for film 2
+          Given The user wants to get second film
+

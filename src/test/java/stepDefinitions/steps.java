@@ -6,6 +6,7 @@ public class steps {
 
     ReusableMethod reusableMethod = new ReusableMethod();
     ReusableMethodsSW reusableMethodsSW = new ReusableMethodsSW();
+    ReusableMethodForBooking booking = new ReusableMethodForBooking();
 
     @Given("The user wants to get client by id as {int}")
     public void the_user_wants_to_get_client_by_id_as(Integer id) {
@@ -41,6 +42,17 @@ public class steps {
     @Given("The user wants to get all Species")
     public void the_user_wants_to_get_all_species() {
          reusableMethodsSW.getAllSpecies();
+    }
+
+
+    @Given("The user wants to get second film")
+    public void the_user_wants_to_get_second_film() {
+        reusableMethodsSW.verifySpeciesForFilm2();
+    }
+
+    @Given("The user should be able to create a token")
+    public void the_user_should_be_able_to_create_a_token() {
+         booking.getToken();
     }
 
 }
